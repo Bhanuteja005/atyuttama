@@ -9,7 +9,7 @@ import Image from "next/image"
 
 const IntegrationsSection = () => {
 
-    const [activeCategory, setActiveCategory] = useState<"all" | "social" | "api" | "crm">("all");
+    const [activeCategory, setActiveCategory] = useState<"all" | "frontend" | "backend" | "ai">("all");
 
     const filteredIntegrations = INTEGRATIONS.filter(integration =>
         activeCategory === "all" ? true : integration.category === activeCategory
